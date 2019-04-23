@@ -1,6 +1,6 @@
 package com.leo.ordenacao;
 
-public class Insertion {
+public class HeapSort {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
