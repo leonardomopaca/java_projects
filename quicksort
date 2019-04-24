@@ -1,0 +1,35 @@
+Algorithm Steps
+* We choose an element from the list, called the pivot. We’ll use it to divide the list into two sub-lists.
+* We reorder all the elements around the pivot – the ones with smaller value are placed before it, and all the elements greater than the pivot after it. After this step, the pivot is in its final position. This is the important partition step.
+* We apply the above steps recursively to both sub-lists on the left and right of the pivot.
+As we can see, quicksort is naturally a recursive algorithm, like every divide and conquer approach.
+
+public void quickSort(int arr[], int begin, int end) {
+    if (begin < end) {
+        int partitionIndex = partition(arr, begin, end);
+ 
+        quickSort(arr, begin, partitionIndex-1);
+        quickSort(arr, partitionIndex+1, end);
+    }
+}
+
+private int partition(int arr[], int begin, int end) {
+    int pivot = arr[end];
+    int i = (begin-1);
+ 
+    for (int j = begin; j < end; j++) {
+        if (arr[j] <= pivot) {
+            i++;
+ 
+            int swapTemp = arr[i];
+            arr[i] = arr[j];
+            arr[j] = swapTemp;
+        }
+    }
+ 
+    int swapTemp = arr[i+1];
+    arr[i+1] = arr[end];
+    arr[end] = swapTemp;
+ 
+    return i+1;
+}
