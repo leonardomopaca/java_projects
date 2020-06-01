@@ -2,6 +2,7 @@ package com.leo.dio.list;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Iterator;
 import java.util.List;
 
 public class ExampleList {
@@ -28,6 +29,17 @@ public class ExampleList {
         System.out.println(nomes.indexOf("João"));
 
         nomes.hashCode();
+
+        for (String nome: nomes) {
+            System.out.println("==>" + nome);
+        }
+
+        Iterator<String> iterator = nomes.iterator();
+
+        while(iterator.hasNext()){
+            System.out.println(iterator.next());
+        }
+
 
     }
 }
