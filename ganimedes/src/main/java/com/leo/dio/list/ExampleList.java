@@ -1,9 +1,6 @@
 package com.leo.dio.list;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Iterator;
-import java.util.List;
+import java.util.*;
 
 public class ExampleList {
     public static void main(String[] args) {
@@ -39,6 +36,13 @@ public class ExampleList {
         while(iterator.hasNext()){
             System.out.println(iterator.next());
         }
+
+        Queue<String> nomes = new LinkedList<String>();
+        nomes.add("ABC");
+        nomes.add("BCD");
+        nomes.add("CDE");
+        nomes.add("DEF");
+
 
 
     }
