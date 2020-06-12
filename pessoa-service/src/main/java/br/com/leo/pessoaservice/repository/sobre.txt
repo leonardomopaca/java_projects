@@ -1,0 +1,2 @@
+Esse pacote vai conter o nosso objeto que vai realizar a persistência no Banco de Dados,
+depois de criar o pacote vamos criar uma Interface com o nome de PessoaRepository
