@@ -30,6 +30,17 @@ public class ExampleQueue {
 
         //nomes.add("FGH");
 
+
+        for (String client: filaBanco){
+            System.out.println(client);
+        }
+
+        Iterator<String> iteratorFilaBanco = filaBanco.iterator();
+
+        while (iteratorFilaBanco.hasNext(){
+            System.out.println(iteratorFilaBanco.next());
+        }
+
         try {
             System.out.println(nomes.element());
         } catch (Exception e) {
