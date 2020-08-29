@@ -1,8 +1,7 @@
-package com.leo.mercurio.appmercurio;
+package com.leo.mercurio;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
 public class MercurioApplication {
